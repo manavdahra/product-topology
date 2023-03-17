@@ -1,7 +1,7 @@
 {
   "name": "product-topology",
   "version": "1.0.0",
-  "description": "",
+  "description": "Provides topological analysis of products being sold and how they are related to each other.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
