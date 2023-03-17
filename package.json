@@ -1,0 +1,23 @@
+{
+  "name": "product-topology",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "ls dist/ | grep -xv 'index.html' | xargs",
+    "build": "npm run clean && npx webpack",
+    "start": "npm run build && node server.js"
+  },
+  "author": "Manav Dahra",
+  "license": "MIT",
+  "dependencies": {
+    "3d-force-graph": "^1.71.2",
+    "three": "^0.150.1"
+  },
+  "devDependencies": {
+    "csv-loader": "^3.0.5",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
