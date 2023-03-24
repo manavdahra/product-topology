@@ -57,7 +57,9 @@ const getPrunedTree = (roots) => {
 
     return { nodes: visibleNodes, links: visibleLinks };
 };
-const elem = document.getElementById('graph');
+const elem = document.createElement('div');
+document.body.appendChild(elem);
+
 const Graph = ForceGraph3D({ controlType: 'fly' })(elem)
     .onNodeClick(node => {
         node.fx = node.x;

@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "ls dist/ | grep -xv 'index.html' | xargs",
-    "build": "npm run clean && npx webpack",
-    "start": "npm run build && node server.js"
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "author": "Manav Dahra",
   "license": "MIT",
@@ -16,8 +17,10 @@
     "three": "^0.150.1"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "csv-loader": "^3.0.5",
     "webpack": "^5.76.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.0"
   }
 }
