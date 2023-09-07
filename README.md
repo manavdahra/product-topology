@@ -11,6 +11,9 @@ npm run start
 
 ![Demo](./demo.png)
 
+Once the view loads in browser you can use 
+W,A,S,D and mouse to move around in the product universe.
+
 ## Versions and Envs used
 1. Node     -   v16.3.0
 2. Npm      -   8.19.2
