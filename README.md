@@ -4,6 +4,8 @@
 1. Below command starts the server on port 8080. And opens up a tab in default browser.
 
 ```
+git clone git@github.com:manavdahra/product-topology.git
+npm install
 npm run start
 ```
 
